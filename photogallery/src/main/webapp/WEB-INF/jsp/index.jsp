@@ -13,8 +13,8 @@
 <body>
 <div id="wrap">
 
-    <h1>Photo Gallery</h1>
-   
+    <h1>Photo Gallery!</h1>
+
 
     <table>
         <tr>
