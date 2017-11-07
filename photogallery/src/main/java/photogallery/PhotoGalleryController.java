@@ -70,7 +70,6 @@ public class PhotoGalleryController {
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     public String addTo(Article article, @RequestParam("file") MultipartFile file) {
         saveFile(article, file);
-
         board.add(article);
         return "redirect:/index.action";
     }
@@ -88,7 +87,7 @@ public class PhotoGalleryController {
             e.printStackTrace();
         } finally {
             try {
-                if(fos != null) {
+                if (fos != null) {
                     fos.close();
                 }
             } catch (IOException e) {
